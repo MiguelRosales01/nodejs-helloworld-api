@@ -32,21 +32,21 @@ curl http://localhost:3000
 
 To run this pipeline in Jenkins, follow these steps:
 
-## Create a new pipeline job:
+## Create a new pipeline job
 
 Open your Jenkins instance and select "New Item".
 Choose "Pipeline" as the project type and enter a name.
 
-## Configure the repository:
+## Configure the repository
 
 In the job configuration, add the URL of this Git repository under the "Source Code Management" section.
 
-## Define the Jenkinsfile:
+## Define the Jenkinsfile
 
 Ensure Jenkins uses the Jenkinsfile from this repository.
 Verify that the Node.js tool is configured in Jenkins under "Global Tool Configuration" with the name nodejs.
 
-## Run the Pipeline:
+## Run the Pipeline
 
 Once configured, run the job in Jenkins.
 Check the console output to ensure that dependencies are installed correctly and that tests run without errors.
