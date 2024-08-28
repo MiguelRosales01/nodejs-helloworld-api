@@ -18,4 +18,13 @@ pipeline {
             }
         }
     }
+    post {
+        success {
+            echo "Build y Test exitosos"
+        }
+        failure {
+            echo "Build o Test falló"
+        }
+    }
 }
+
